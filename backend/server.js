@@ -51,8 +51,8 @@ app.get('/api/health', async (req, res) => {
     return res.status(200).json({
       status: 'ok',
       oracle: 'connected',
-      databaseUser: process.env.DB_USER || null,
-      connectString: process.env.DB_CONNECT_STRING || null,
+      databaseUser: process.env.DB_USER ? 'configured' : null,
+      connectString: process.env.DB_CONNECT_STRING ? 'configured' : null,
       result: result.rows[0][0],
     });
   } catch (error) {
@@ -97,7 +97,7 @@ app.use((error, req, res, next) => {
 async function startServer() {
   await initPool();
 
-  const server = app.listen(PORT, () => {
+  const server = app.listen(PORT, '0.0.0.0', () => {
     console.log(`Complaint Management System listening on port ${PORT}`);
   });
   server.once('error', (error) => {

@@ -133,6 +133,16 @@ The backend creates an Oracle connection pool using `oracledb.createPool()` defi
 
 The app is designed to work against the real Oracle tables already present in the database. If Oracle returns `ORA-28000`, the account `CMSUSER` is locked. Unlock the Oracle user first, then restart the app and retry the login.
 
+## Render Deployment
+
+Deploy the [GitHub repository](https://github.com/pavanvanukuri/complaint-management-system) as a Render Web Service using the root `render.yaml` Blueprint.
+
+- Build command: `npm install`
+- Start command: `npm start`
+- Health check: `/api/health` (checks Oracle connectivity)
+- Set `DB_USER`, `DB_PASSWORD`, `DB_CONNECT_STRING`, and `SESSION_SECRET` in Render's Environment settings.
+- The Oracle database must be reachable from Render. Do not use `localhost` or the local `FREEPDB1` connection string; enter the real cloud Oracle connection string and credentials in Render only.
+
 ## Deployment Gate
 
 Login currently looks up users by registration number only because the existing `USERS` table has no password field. This is suitable only for a controlled classroom demonstration; a registration number is not an authentication secret. Before public deployment, integrate a trusted university identity provider or another approved authentication mechanism without changing the Oracle schema. Also configure the backend with a network-reachable Oracle service: `localhost` in the developer's `.env` refers to that developer's machine and is not reachable from a cloud host.

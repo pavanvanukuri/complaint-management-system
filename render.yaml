@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: complaint-management-system
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_CONNECT_STRING
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
