@@ -158,6 +158,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  if (loginForm) {
+    document.querySelectorAll('.demo-chip').forEach((button) => {
+      button.addEventListener('click', () => {
+        const reg = button.getAttribute('data-reg');
+        const input = document.getElementById('registration_no');
+        if (input && reg) {
+          input.value = reg;
+          if (typeof loginForm.requestSubmit === 'function') {
+            loginForm.requestSubmit();
+          } else {
+            loginForm.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+          }
+        }
+      });
+    });
+  }
+
   if (logoutBtn) {
     logoutBtn.addEventListener('click', logoutUser);
   }

@@ -1,0 +1,1808 @@
+{
+  "department": [
+    {
+      "department_id": 1,
+      "department_code": "CSE",
+      "department_name": "Computer Science and Engineering",
+      "contact_email": "cse.dept@univ.edu"
+    },
+    {
+      "department_id": 2,
+      "department_code": "ECE",
+      "department_name": "Electronics and Communication Engineering",
+      "contact_email": "ece.dept@univ.edu"
+    },
+    {
+      "department_id": 3,
+      "department_code": "EEE",
+      "department_name": "Electrical and Electronics Engineering",
+      "contact_email": "eee.dept@univ.edu"
+    },
+    {
+      "department_id": 4,
+      "department_code": "MECH",
+      "department_name": "Mechanical Engineering",
+      "contact_email": "mech.dept@univ.edu"
+    },
+    {
+      "department_id": 5,
+      "department_code": "CIVIL",
+      "department_name": "Civil Engineering",
+      "contact_email": "civil.dept@univ.edu"
+    }
+  ],
+  "category": [
+    {
+      "category_id": 1,
+      "category_code": "ACAD",
+      "category_name": "Academic",
+      "description": "Coursework, lectures, faculty guidance, and grading issues"
+    },
+    {
+      "category_id": 2,
+      "category_code": "HOST",
+      "category_name": "Hostel",
+      "description": "Room maintenance, water, cleanliness, and hostel amenities"
+    },
+    {
+      "category_id": 3,
+      "category_code": "LIBR",
+      "category_name": "Library",
+      "description": "Book availability, journal access, digital library, and study room facilities"
+    },
+    {
+      "category_id": 4,
+      "category_code": "INFR",
+      "category_name": "Infrastructure",
+      "description": "Classroom furniture, air conditioning, lab setups, and building maintenance"
+    },
+    {
+      "category_id": 5,
+      "category_code": "EXAM",
+      "category_name": "Examination",
+      "description": "Schedules, hall tickets, grade sheets, and exam hall seating"
+    },
+    {
+      "category_id": 6,
+      "category_code": "TRAN",
+      "category_name": "Transport",
+      "description": "Bus routes, timings, bus passes, and vehicle condition"
+    },
+    {
+      "category_id": 7,
+      "category_code": "CANT",
+      "category_name": "Canteen",
+      "description": "Food quality, hygiene, pricing, and cafeteria services"
+    },
+    {
+      "category_id": 8,
+      "category_code": "NWIT",
+      "category_name": "Network/IT",
+      "description": "Campus Wi-Fi, ERP portal access, lab internet, and printer networks"
+    }
+  ],
+  "status": [
+    {
+      "status_id": 1,
+      "status_name": "Pending",
+      "description": "Complaint lodged and awaiting administrative review"
+    },
+    {
+      "status_id": 2,
+      "status_name": "Assigned",
+      "description": "Complaint routed and assigned to departmental staff"
+    },
+    {
+      "status_id": 3,
+      "status_name": "In Progress",
+      "description": "Investigation or active resolution work in progress"
+    },
+    {
+      "status_id": 4,
+      "status_name": "Resolved",
+      "description": "Corrective action completed and awaiting user confirmation"
+    },
+    {
+      "status_id": 5,
+      "status_name": "Closed",
+      "description": "Complaint verified and formally closed in system"
+    }
+  ],
+  "priority": [
+    {
+      "priority_id": 1,
+      "priority_name": "Low",
+      "description": "Minor inconvenience with low operational impact"
+    },
+    {
+      "priority_id": 2,
+      "priority_name": "Medium",
+      "description": "Moderate issue requiring attention within standard turnaround time"
+    },
+    {
+      "priority_id": 3,
+      "priority_name": "High",
+      "description": "Significant operational impediment requiring prompt action"
+    },
+    {
+      "priority_id": 4,
+      "priority_name": "Critical",
+      "description": "Urgent breakdown or safety issue requiring immediate intervention"
+    }
+  ],
+  "staff": [
+    {
+      "staff_id": 1,
+      "department_id": 1,
+      "staff_name": "Dr. Rajesh Sharma",
+      "email": "rsharma.staff@univ.edu",
+      "designation": "Professor & Systems Head"
+    },
+    {
+      "staff_id": 2,
+      "department_id": 1,
+      "staff_name": "Priya Nair",
+      "email": "pnair.staff@univ.edu",
+      "designation": "Assistant Lab Officer"
+    },
+    {
+      "staff_id": 3,
+      "department_id": 1,
+      "staff_name": "Amitabh Verma",
+      "email": "averma.staff@univ.edu",
+      "designation": "IT Support Specialist"
+    },
+    {
+      "staff_id": 4,
+      "department_id": 2,
+      "staff_name": "Dr. Sunita Kulkarni",
+      "email": "skulkarni.staff@univ.edu",
+      "designation": "Associate Professor"
+    },
+    {
+      "staff_id": 5,
+      "department_id": 2,
+      "staff_name": "Vikram Patel",
+      "email": "vpatel.staff@univ.edu",
+      "designation": "Electronics Lab Engineer"
+    },
+    {
+      "staff_id": 6,
+      "department_id": 2,
+      "staff_name": "Kavita Rao",
+      "email": "krao.staff@univ.edu",
+      "designation": "Department Coordinator"
+    },
+    {
+      "staff_id": 7,
+      "department_id": 3,
+      "staff_name": "Dr. Manoj Sen",
+      "email": "msen.staff@univ.edu",
+      "designation": "Professor & Lab Incharge"
+    },
+    {
+      "staff_id": 8,
+      "department_id": 3,
+      "staff_name": "Deepak Joshi",
+      "email": "djoshi.staff@univ.edu",
+      "designation": "Power Lab Assistant"
+    },
+    {
+      "staff_id": 9,
+      "department_id": 3,
+      "staff_name": "Ananya Ghosh",
+      "email": "aghosh.staff@univ.edu",
+      "designation": "Technical Officer"
+    },
+    {
+      "staff_id": 10,
+      "department_id": 4,
+      "staff_name": "Dr. Suresh Reddy",
+      "email": "sreddy.staff@univ.edu",
+      "designation": "Workshop Superintendent"
+    },
+    {
+      "staff_id": 11,
+      "department_id": 4,
+      "staff_name": "Rohan Deshmukh",
+      "email": "rdeshmukh.staff@univ.edu",
+      "designation": "CAD/CAM Lab Assistant"
+    },
+    {
+      "staff_id": 12,
+      "department_id": 4,
+      "staff_name": "Neha Chawla",
+      "email": "nchawla.staff@univ.edu",
+      "designation": "Department Liaison Officer"
+    },
+    {
+      "staff_id": 13,
+      "department_id": 5,
+      "staff_name": "Dr. Arvind Hegde",
+      "email": "ahegde.staff@univ.edu",
+      "designation": "Professor & Structural Lab Head"
+    },
+    {
+      "staff_id": 14,
+      "department_id": 5,
+      "staff_name": "Siddharth Das",
+      "email": "sdas.staff@univ.edu",
+      "designation": "Surveying Lab Technician"
+    },
+    {
+      "staff_id": 15,
+      "department_id": 5,
+      "staff_name": "Pooja Banerjee",
+      "email": "pbanerjee.staff@univ.edu",
+      "designation": "Civil Works Coordinator"
+    }
+  ],
+  "users": [
+    {
+      "user_id": 1,
+      "registration_no": "REG2024CSE001",
+      "name": "Aarav Gupta",
+      "email": "aarav.gupta@univ.edu",
+      "phone": "+919876500001",
+      "department_id": 1,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 2,
+      "registration_no": "REG2024CSE002",
+      "name": "Ishita Saxena",
+      "email": "ishita.saxena@univ.edu",
+      "phone": "+919876500002",
+      "department_id": 1,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 3,
+      "registration_no": "REG2024CSE003",
+      "name": "Karan Mehta",
+      "email": "karan.mehta@univ.edu",
+      "phone": "+919876500003",
+      "department_id": 1,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 4,
+      "registration_no": "REG2024CSE004",
+      "name": "Divya Pillai",
+      "email": "divya.pillai@univ.edu",
+      "phone": "+919876500004",
+      "department_id": 1,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 5,
+      "registration_no": "REG2024CSE005",
+      "name": "Tanmay Bhatia",
+      "email": "tanmay.bhatia@univ.edu",
+      "phone": "+919876500005",
+      "department_id": 1,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 6,
+      "registration_no": "REG2024CSE006",
+      "name": "Sneha Iyer",
+      "email": "sneha.iyer@univ.edu",
+      "phone": "+919876500006",
+      "department_id": 1,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 7,
+      "registration_no": "REG2024ECE001",
+      "name": "Rohan Kapur",
+      "email": "rohan.kapur@univ.edu",
+      "phone": "+919876500007",
+      "department_id": 2,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 8,
+      "registration_no": "REG2024ECE002",
+      "name": "Meera Nambiar",
+      "email": "meera.nambiar@univ.edu",
+      "phone": "+919876500008",
+      "department_id": 2,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 9,
+      "registration_no": "REG2024ECE003",
+      "name": "Aditya Prasad",
+      "email": "aditya.prasad@univ.edu",
+      "phone": "+919876500009",
+      "department_id": 2,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 10,
+      "registration_no": "REG2024ECE004",
+      "name": "Rhea Sengupta",
+      "email": "rhea.sengupta@univ.edu",
+      "phone": "+919876500010",
+      "department_id": 2,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 11,
+      "registration_no": "REG2024ECE005",
+      "name": "Nikhil Malhotra",
+      "email": "nikhil.malhotra@univ.edu",
+      "phone": "+919876500011",
+      "department_id": 2,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 12,
+      "registration_no": "REG2024ECE006",
+      "name": "Kritika Anand",
+      "email": "kritika.anand@univ.edu",
+      "phone": "+919876500012",
+      "department_id": 2,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 13,
+      "registration_no": "REG2024EEE001",
+      "name": "Arjun Nair",
+      "email": "arjun.nair@univ.edu",
+      "phone": "+919876500013",
+      "department_id": 3,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 14,
+      "registration_no": "REG2024EEE002",
+      "name": "Pooja Varma",
+      "email": "pooja.varma@univ.edu",
+      "phone": "+919876500014",
+      "department_id": 3,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 15,
+      "registration_no": "REG2024EEE003",
+      "name": "Siddharth Roy",
+      "email": "siddharth.roy@univ.edu",
+      "phone": "+919876500015",
+      "department_id": 3,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 16,
+      "registration_no": "REG2024EEE004",
+      "name": "Varun Shenoy",
+      "email": "varun.shenoy@univ.edu",
+      "phone": "+919876500016",
+      "department_id": 3,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 17,
+      "registration_no": "REG2024EEE005",
+      "name": "Ananya Menon",
+      "email": "ananya.menon@univ.edu",
+      "phone": "+919876500017",
+      "department_id": 3,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 18,
+      "registration_no": "REG2024EEE006",
+      "name": "Harsh Vardhan",
+      "email": "harsh.vardhan@univ.edu",
+      "phone": "+919876500018",
+      "department_id": 3,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 19,
+      "registration_no": "REG2024MEC001",
+      "name": "Vivek Chauhan",
+      "email": "vivek.chauhan@univ.edu",
+      "phone": "+919876500019",
+      "department_id": 4,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 20,
+      "registration_no": "REG2024MEC002",
+      "name": "Shreya Dubey",
+      "email": "shreya.dubey@univ.edu",
+      "phone": "+919876500020",
+      "department_id": 4,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 21,
+      "registration_no": "REG2024MEC003",
+      "name": "Gaurav Pandey",
+      "email": "gaurav.pandey@univ.edu",
+      "phone": "+919876500021",
+      "department_id": 4,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 22,
+      "registration_no": "REG2024MEC004",
+      "name": "Tanya Srivastava",
+      "email": "tanya.srivastava@univ.edu",
+      "phone": "+919876500022",
+      "department_id": 4,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 23,
+      "registration_no": "REG2024MEC005",
+      "name": "Pranav Kulkarni",
+      "email": "pranav.kulkarni@univ.edu",
+      "phone": "+919876500023",
+      "department_id": 4,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 24,
+      "registration_no": "REG2024MEC006",
+      "name": "Bhavna Swaminathan",
+      "email": "bhavna.swaminathan@univ.edu",
+      "phone": "+919876500024",
+      "department_id": 4,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 25,
+      "registration_no": "REG2024CIV001",
+      "name": "Rahul Kaushik",
+      "email": "rahul.kaushik@univ.edu",
+      "phone": "+919876500025",
+      "department_id": 5,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 26,
+      "registration_no": "REG2024CIV002",
+      "name": "Sanjana Bhatt",
+      "email": "sanjana.bhatt@univ.edu",
+      "phone": "+919876500026",
+      "department_id": 5,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 27,
+      "registration_no": "REG2024CIV003",
+      "name": "Abhishek Tiwari",
+      "email": "abhishek.tiwari@univ.edu",
+      "phone": "+919876500027",
+      "department_id": 5,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 28,
+      "registration_no": "REG2024CIV004",
+      "name": "Mohit Agarwal",
+      "email": "mohit.agarwal@univ.edu",
+      "phone": "+919876500028",
+      "department_id": 5,
+      "user_type": "Student"
+    },
+    {
+      "user_id": 29,
+      "registration_no": "FAC2021CSE01",
+      "name": "Dr. Tarun Mathur",
+      "email": "tarun.mathur@univ.edu",
+      "phone": "+919876500029",
+      "department_id": 1,
+      "user_type": "Faculty"
+    },
+    {
+      "user_id": 30,
+      "registration_no": "FAC2020ECE02",
+      "name": "Dr. Shalini Misra",
+      "email": "shalini.misra@univ.edu",
+      "phone": "+919876500030",
+      "department_id": 2,
+      "user_type": "Faculty"
+    }
+  ],
+  "complaint": [
+    {
+      "complaint_id": 1,
+      "user_id": 1,
+      "category_id": 8,
+      "department_id": 1,
+      "staff_id": 3,
+      "priority_id": 3,
+      "status_id": 4,
+      "subject": "High latency on CSE Lab 3 subnet",
+      "description": "Ethernet switch drops packets intermittently during compiler laboratory sessions."
+    },
+    {
+      "complaint_id": 2,
+      "user_id": 2,
+      "category_id": 1,
+      "department_id": 1,
+      "staff_id": 1,
+      "priority_id": 2,
+      "status_id": 2,
+      "subject": "Elective course portal access error",
+      "description": "Student unable to enroll in Cloud Computing elective due to prerequisite mapping bug."
+    },
+    {
+      "complaint_id": 3,
+      "user_id": 3,
+      "category_id": 4,
+      "department_id": 1,
+      "staff_id": 2,
+      "priority_id": 2,
+      "status_id": 3,
+      "subject": "Faulty overhead projector in CSE LH-101",
+      "description": "Projector bulb flickers and shuts down after 15 minutes of lecture time."
+    },
+    {
+      "complaint_id": 4,
+      "user_id": 4,
+      "category_id": 8,
+      "department_id": 1,
+      "staff_id": 3,
+      "priority_id": 4,
+      "status_id": 4,
+      "subject": "Wi-Fi access point down in Turing Block",
+      "description": "The wireless access point outside Room 204 shows no signal since morning."
+    },
+    {
+      "complaint_id": 5,
+      "user_id": 5,
+      "category_id": 2,
+      "department_id": 1,
+      "staff_id": 2,
+      "priority_id": 3,
+      "status_id": 3,
+      "subject": "Hostel 1 water cooler cooling unit failure",
+      "description": "Water cooler on the second floor of Hostel 1 is dispensing warm water."
+    },
+    {
+      "complaint_id": 6,
+      "user_id": 6,
+      "category_id": 3,
+      "department_id": 1,
+      "staff_id": 1,
+      "priority_id": 1,
+      "status_id": 5,
+      "subject": "Missing reference copies for DBMS textbook",
+      "description": "Requested additional copies of Korth 7th edition for semester exam reference."
+    },
+    {
+      "complaint_id": 7,
+      "user_id": 29,
+      "category_id": 4,
+      "department_id": 1,
+      "staff_id": 2,
+      "priority_id": 3,
+      "status_id": 2,
+      "subject": "Faulty HVAC in Advanced Computing Lab",
+      "description": "Split AC unit 2 in CSE PG Lab is making loud rattling noise and leaking water."
+    },
+    {
+      "complaint_id": 8,
+      "user_id": 1,
+      "category_id": 5,
+      "department_id": 1,
+      "staff_id": 1,
+      "priority_id": 4,
+      "status_id": 3,
+      "subject": "Mid-semester lab exam timetable clash",
+      "description": "Data Structures lab exam overlaps with Probability and Statistics theory slot."
+    },
+    {
+      "complaint_id": 9,
+      "user_id": 2,
+      "category_id": 7,
+      "department_id": 1,
+      "staff_id": 2,
+      "priority_id": 2,
+      "status_id": 4,
+      "subject": "Digital payment terminal down at Turing Cafe",
+      "description": "UPI QR code scanner fails intermittently leading to long queue during lunch hours."
+    },
+    {
+      "complaint_id": 10,
+      "user_id": 3,
+      "category_id": 8,
+      "department_id": 1,
+      "staff_id": 3,
+      "priority_id": 3,
+      "status_id": 3,
+      "subject": "Slow Git repository server synchronisation",
+      "description": "Internal GitLab server taking excessively long time to push lab assignment commits."
+    },
+    {
+      "complaint_id": 11,
+      "user_id": 7,
+      "category_id": 4,
+      "department_id": 2,
+      "staff_id": 5,
+      "priority_id": 3,
+      "status_id": 4,
+      "subject": "Faulty cathode ray oscilloscope in ECE Lab 2",
+      "description": "CRO station 6 shows horizontal line collapse on channel 1 during signals lab."
+    },
+    {
+      "complaint_id": 12,
+      "user_id": 8,
+      "category_id": 8,
+      "department_id": 2,
+      "staff_id": 6,
+      "priority_id": 2,
+      "status_id": 3,
+      "subject": "DSP lab workstation network port inactive",
+      "description": "Workstation 12 cannot communicate with the central MATLAB license server."
+    },
+    {
+      "complaint_id": 13,
+      "user_id": 9,
+      "category_id": 1,
+      "department_id": 2,
+      "staff_id": 4,
+      "priority_id": 2,
+      "status_id": 5,
+      "subject": "Syllabus coverage discrepancy in VLSI Design",
+      "description": "Unit 4 layout design practical demonstrations pending prior to mid-term exam."
+    },
+    {
+      "complaint_id": 14,
+      "user_id": 10,
+      "category_id": 2,
+      "department_id": 2,
+      "staff_id": 6,
+      "priority_id": 3,
+      "status_id": 4,
+      "subject": "Hostel 2 washing machine drain malfunction",
+      "description": "Drainage pipe blockage in ground floor laundry room causing water stagnation."
+    },
+    {
+      "complaint_id": 15,
+      "user_id": 11,
+      "category_id": 6,
+      "department_id": 2,
+      "staff_id": 6,
+      "priority_id": 2,
+      "status_id": 2,
+      "subject": "Route 5 college bus departure delay",
+      "description": "Bus Route 5 regularly departs campus 25 minutes late causing evening commute issues."
+    },
+    {
+      "complaint_id": 16,
+      "user_id": 12,
+      "category_id": 3,
+      "department_id": 2,
+      "staff_id": 4,
+      "priority_id": 1,
+      "status_id": 5,
+      "subject": "IEEE Xplore journal access denied on campus IP",
+      "description": "Access to IEEE transactions shows institutional license expiration message."
+    },
+    {
+      "complaint_id": 17,
+      "user_id": 30,
+      "category_id": 4,
+      "department_id": 2,
+      "staff_id": 5,
+      "priority_id": 4,
+      "status_id": 3,
+      "subject": "Microcontroller development board power fault",
+      "description": "ARM Cortex kits in Embedded Systems Lab show erratic resets under 5V supply."
+    },
+    {
+      "complaint_id": 18,
+      "user_id": 7,
+      "category_id": 7,
+      "department_id": 2,
+      "staff_id": 6,
+      "priority_id": 2,
+      "status_id": 4,
+      "subject": "Hostel mess hygiene concern during breakfast",
+      "description": "Drinking water dispenser counter near mess counter found unattended and untidy."
+    },
+    {
+      "complaint_id": 19,
+      "user_id": 8,
+      "category_id": 5,
+      "department_id": 2,
+      "staff_id": 4,
+      "priority_id": 4,
+      "status_id": 2,
+      "subject": "Grade sheet discrepancy in Signals & Systems",
+      "description": "Internal assessment mark uploaded on portal does not match verified quiz score."
+    },
+    {
+      "complaint_id": 20,
+      "user_id": 9,
+      "category_id": 8,
+      "department_id": 2,
+      "staff_id": 5,
+      "priority_id": 1,
+      "status_id": 1,
+      "subject": "Wi-Fi credential renewal failure on eduroam",
+      "description": "Authentication loop occurs when connecting newly registered student laptop."
+    },
+    {
+      "complaint_id": 21,
+      "user_id": 13,
+      "category_id": 4,
+      "department_id": 3,
+      "staff_id": 8,
+      "priority_id": 4,
+      "status_id": 4,
+      "subject": "Electrical Machines Lab main circuit breaker tripping",
+      "description": "MCB trips repeatedly when running DC shunt motor test bench under rated load."
+    },
+    {
+      "complaint_id": 22,
+      "user_id": 14,
+      "category_id": 8,
+      "department_id": 3,
+      "staff_id": 9,
+      "priority_id": 2,
+      "status_id": 3,
+      "subject": "SCADA simulation software license expired",
+      "description": "Workstations in Power Systems Simulation Lab show license key error on startup."
+    },
+    {
+      "complaint_id": 23,
+      "user_id": 15,
+      "category_id": 2,
+      "department_id": 3,
+      "staff_id": 9,
+      "priority_id": 3,
+      "status_id": 5,
+      "subject": "Hostel 3 geyser tripping bathroom circuit breaker",
+      "description": "Geyser unit in Block B 1st floor washroom cuts off power to corridor lights."
+    },
+    {
+      "complaint_id": 24,
+      "user_id": 16,
+      "category_id": 1,
+      "department_id": 3,
+      "staff_id": 7,
+      "priority_id": 2,
+      "status_id": 2,
+      "subject": "Control Systems lecture audio system distortion",
+      "description": "Wireless collar mic in EEE Seminar Hall produces high frequency squeal."
+    },
+    {
+      "complaint_id": 25,
+      "user_id": 17,
+      "category_id": 6,
+      "department_id": 3,
+      "staff_id": 9,
+      "priority_id": 1,
+      "status_id": 5,
+      "subject": "Route 12 evening bus overcrowding",
+      "description": "Insufficient seating capacity on Route 12 forcing students to stand in aisle."
+    },
+    {
+      "complaint_id": 26,
+      "user_id": 18,
+      "category_id": 4,
+      "department_id": 3,
+      "staff_id": 8,
+      "priority_id": 3,
+      "status_id": 3,
+      "subject": "Switchboard socket burn marks in EEE Lab 1",
+      "description": "Wall socket near bench 4 shows overheating signs and requires immediate replacement."
+    },
+    {
+      "complaint_id": 27,
+      "user_id": 13,
+      "category_id": 7,
+      "department_id": 3,
+      "staff_id": 9,
+      "priority_id": 2,
+      "status_id": 4,
+      "subject": "Canteen water filter cartridge replacement",
+      "description": "Filter indicator light on EEE block corridor RO purifier blinking red."
+    },
+    {
+      "complaint_id": 28,
+      "user_id": 14,
+      "category_id": 5,
+      "department_id": 3,
+      "staff_id": 7,
+      "priority_id": 3,
+      "status_id": 2,
+      "subject": "End-term lab evaluation schedule clash",
+      "description": "Power Electronics viva slot coincides with university placement aptitude test."
+    },
+    {
+      "complaint_id": 29,
+      "user_id": 15,
+      "category_id": 8,
+      "department_id": 3,
+      "staff_id": 9,
+      "priority_id": 2,
+      "status_id": 1,
+      "subject": "Slow internet connection on EEE library terminals",
+      "description": "Digital terminal speed drops below 1 Mbps during peak morning study hours."
+    },
+    {
+      "complaint_id": 30,
+      "user_id": 16,
+      "category_id": 3,
+      "department_id": 3,
+      "staff_id": 7,
+      "priority_id": 1,
+      "status_id": 4,
+      "subject": "Renewal of electrical standard reference handbooks",
+      "description": "Bureau of Indian Standards wiring regulations volumes missing from shelf."
+    },
+    {
+      "complaint_id": 31,
+      "user_id": 19,
+      "category_id": 4,
+      "department_id": 4,
+      "staff_id": 11,
+      "priority_id": 3,
+      "status_id": 4,
+      "subject": "Hydraulic press pressure gauge calibration fault",
+      "description": "Hydraulics lab press shows 15 bar deviation compared to digital transducer."
+    },
+    {
+      "complaint_id": 32,
+      "user_id": 20,
+      "category_id": 8,
+      "department_id": 4,
+      "staff_id": 12,
+      "priority_id": 2,
+      "status_id": 3,
+      "subject": "SolidWorks workstation GPU driver crash",
+      "description": "Mechanical CAD lab computers crash during 3D assembly mesh generation."
+    },
+    {
+      "complaint_id": 33,
+      "user_id": 21,
+      "category_id": 2,
+      "department_id": 4,
+      "staff_id": 12,
+      "priority_id": 3,
+      "status_id": 4,
+      "subject": "Hostel 4 ceiling fan bearing noise",
+      "description": "Ceiling fan in room 312 makes excessive grinding noise throughout the night."
+    },
+    {
+      "complaint_id": 34,
+      "user_id": 22,
+      "category_id": 1,
+      "department_id": 4,
+      "staff_id": 10,
+      "priority_id": 2,
+      "status_id": 5,
+      "subject": "Thermodynamics tutorial doubt-clearing session",
+      "description": "Request for extra numerical problem-solving session before mid-semester exam."
+    },
+    {
+      "complaint_id": 35,
+      "user_id": 23,
+      "category_id": 6,
+      "department_id": 4,
+      "staff_id": 12,
+      "priority_id": 3,
+      "status_id": 2,
+      "subject": "Bus Route 8 flat tyre causing missed class",
+      "description": "Bus broken down on highway without backup transport arriving within 45 minutes."
+    },
+    {
+      "complaint_id": 36,
+      "user_id": 24,
+      "category_id": 4,
+      "department_id": 4,
+      "staff_id": 11,
+      "priority_id": 4,
+      "status_id": 3,
+      "subject": "Lathe machine coolant pump motor failure",
+      "description": "Workshop Lathe 4 coolant circulation pump stopped working mid-turning cycle."
+    },
+    {
+      "complaint_id": 37,
+      "user_id": 19,
+      "category_id": 7,
+      "department_id": 4,
+      "staff_id": 12,
+      "priority_id": 1,
+      "status_id": 5,
+      "subject": "Mechanical block canteen menu price discrepancy",
+      "description": "Snack price charged on POS machine higher than the committee approved tariff."
+    },
+    {
+      "complaint_id": 38,
+      "user_id": 20,
+      "category_id": 5,
+      "department_id": 4,
+      "staff_id": 10,
+      "priority_id": 4,
+      "status_id": 2,
+      "subject": "Missing hall ticket barcode for CAD practical",
+      "description": "Examination portal generated hall ticket without machine readable barcode."
+    },
+    {
+      "complaint_id": 39,
+      "user_id": 21,
+      "category_id": 8,
+      "department_id": 4,
+      "staff_id": 11,
+      "priority_id": 2,
+      "status_id": 1,
+      "subject": "LAN drop cable broken at workstation M-18",
+      "description": "RJ45 connector clip snapped off causing physical cable disconnects."
+    },
+    {
+      "complaint_id": 40,
+      "user_id": 22,
+      "category_id": 3,
+      "department_id": 4,
+      "staff_id": 10,
+      "priority_id": 1,
+      "status_id": 4,
+      "subject": "Mechanical Vibrations reference volume missing",
+      "description": "Singiresu Rao Mechanical Vibrations copy marked available but untraceable."
+    },
+    {
+      "complaint_id": 41,
+      "user_id": 25,
+      "category_id": 4,
+      "department_id": 5,
+      "staff_id": 14,
+      "priority_id": 3,
+      "status_id": 4,
+      "subject": "Total station electronic transit battery drainage",
+      "description": "Surveying lab total station battery depletes within 20 minutes of field setup."
+    },
+    {
+      "complaint_id": 42,
+      "user_id": 26,
+      "category_id": 8,
+      "department_id": 5,
+      "staff_id": 15,
+      "priority_id": 2,
+      "status_id": 3,
+      "subject": "AutoCAD Civil 3D network license timeout",
+      "description": "Civil computing lab loses server connection after 10 minutes of operation."
+    },
+    {
+      "complaint_id": 43,
+      "user_id": 27,
+      "category_id": 2,
+      "department_id": 5,
+      "staff_id": 15,
+      "priority_id": 3,
+      "status_id": 5,
+      "subject": "Hostel 5 corridor window latch broken",
+      "description": "First floor corridor window cannot be shut during heavy monsoon rain."
+    },
+    {
+      "complaint_id": 44,
+      "user_id": 28,
+      "category_id": 1,
+      "department_id": 5,
+      "staff_id": 13,
+      "priority_id": 2,
+      "status_id": 2,
+      "subject": "Geotechnical lab soil testing sieve replacement",
+      "description": "Standard 75 micron sieve mesh torn causing inaccurate particle distribution."
+    },
+    {
+      "complaint_id": 45,
+      "user_id": 25,
+      "category_id": 6,
+      "department_id": 5,
+      "staff_id": 15,
+      "priority_id": 2,
+      "status_id": 4,
+      "subject": "Transport bus pass renewal kiosk offline",
+      "description": "RFID bus pass activation terminal at campus transport desk displaying blue screen."
+    },
+    {
+      "complaint_id": 46,
+      "user_id": 26,
+      "category_id": 4,
+      "department_id": 5,
+      "staff_id": 14,
+      "priority_id": 4,
+      "status_id": 3,
+      "subject": "Universal Testing Machine load cell drift",
+      "description": "Strength of Materials UTM machine indicates non-zero baseline load without tare."
+    },
+    {
+      "complaint_id": 47,
+      "user_id": 27,
+      "category_id": 7,
+      "department_id": 5,
+      "staff_id": 15,
+      "priority_id": 2,
+      "status_id": 5,
+      "subject": "Canteen seating furniture maintenance required",
+      "description": "Two dining tables in North Canteen have wobbling legs and loose screws."
+    },
+    {
+      "complaint_id": 48,
+      "user_id": 28,
+      "category_id": 5,
+      "department_id": 5,
+      "staff_id": 13,
+      "priority_id": 3,
+      "status_id": 2,
+      "subject": "Surveying field practical exam clash with elective",
+      "description": "Civil site survey practical exam overlaps with Environmental Studies test."
+    },
+    {
+      "complaint_id": 49,
+      "user_id": 25,
+      "category_id": 8,
+      "department_id": 5,
+      "staff_id": 14,
+      "priority_id": 1,
+      "status_id": 1,
+      "subject": "Civil departmental notice board digital display blank",
+      "description": "Foyer digital LED announcement display panel turned off due to power cable issue."
+    },
+    {
+      "complaint_id": 50,
+      "user_id": 26,
+      "category_id": 3,
+      "department_id": 5,
+      "staff_id": 13,
+      "priority_id": 1,
+      "status_id": 4,
+      "subject": "Concrete technology research journals bound volume access",
+      "description": "Indian Concrete Institute journal archives from 2020-2023 missing from reference section."
+    },
+    {
+      "complaint_id": 51,
+      "user_id": 3,
+      "category_id": 4,
+      "department_id": 1,
+      "staff_id": null,
+      "priority_id": 3,
+      "status_id": 1,
+      "subject": "Application connectivity committed verification",
+      "description": "Confirming the Oracle commit fix on the refreshed backend."
+    },
+    {
+      "complaint_id": 52,
+      "user_id": 3,
+      "category_id": 4,
+      "department_id": 1,
+      "staff_id": null,
+      "priority_id": 3,
+      "status_id": 1,
+      "subject": "Live form connectivity verification",
+      "description": "Submitted through the student complaint form to verify Oracle persistence and dashboard refresh."
+    },
+    {
+      "complaint_id": 53,
+      "user_id": 3,
+      "category_id": 4,
+      "department_id": 3,
+      "staff_id": null,
+      "priority_id": 1,
+      "status_id": 1,
+      "subject": "Test complaint for project demonstration",
+      "description": "please do it"
+    }
+  ],
+  "comments": [
+    {
+      "comment_id": 1,
+      "complaint_id": 1,
+      "user_id": 1,
+      "comment_text": "Submitted packet capture log from switch console to assist debugging.",
+      "comment_date": "2024-09-01T18:30:00.000Z"
+    },
+    {
+      "comment_id": 2,
+      "complaint_id": 1,
+      "user_id": 3,
+      "comment_text": "Network engineer inspected rack 3; replaced faulty patch cable.",
+      "comment_date": "2024-09-02T18:30:00.000Z"
+    },
+    {
+      "comment_id": 3,
+      "complaint_id": 2,
+      "user_id": 2,
+      "comment_text": "Enrollment portal administrator notified regarding curriculum prerequisite code.",
+      "comment_date": "2024-09-03T18:30:00.000Z"
+    },
+    {
+      "comment_id": 4,
+      "complaint_id": 3,
+      "user_id": 3,
+      "comment_text": "AV technician assigned to inspect projector power supply and bulb assembly.",
+      "comment_date": "2024-09-04T18:30:00.000Z"
+    },
+    {
+      "comment_id": 5,
+      "complaint_id": 3,
+      "user_id": 2,
+      "comment_text": "Replacement projector lamp requested from central procurement inventory.",
+      "comment_date": "2024-09-05T18:30:00.000Z"
+    },
+    {
+      "comment_id": 6,
+      "complaint_id": 4,
+      "user_id": 4,
+      "comment_text": "Turing block AP restarted; testing signal coverage across 2nd floor.",
+      "comment_date": "2024-09-06T18:30:00.000Z"
+    },
+    {
+      "comment_id": 7,
+      "complaint_id": 4,
+      "user_id": 3,
+      "comment_text": "Firmware updated on access point controller; throughput verified normal.",
+      "comment_date": "2024-09-07T18:30:00.000Z"
+    },
+    {
+      "comment_id": 8,
+      "complaint_id": 5,
+      "user_id": 5,
+      "comment_text": "Hostel warden visited site; refrigeration technician requested for compressor check.",
+      "comment_date": "2024-09-08T18:30:00.000Z"
+    },
+    {
+      "comment_id": 9,
+      "complaint_id": 6,
+      "user_id": 6,
+      "comment_text": "Librarian procured 5 additional copies of DBMS book in reference stack.",
+      "comment_date": "2024-09-09T18:30:00.000Z"
+    },
+    {
+      "comment_id": 10,
+      "complaint_id": 7,
+      "user_id": 29,
+      "comment_text": "Noticed leak spreading onto server rack floor mat; requires urgent shutdown.",
+      "comment_date": "2024-09-10T18:30:00.000Z"
+    },
+    {
+      "comment_id": 11,
+      "complaint_id": 7,
+      "user_id": 2,
+      "comment_text": "Maintenance team drained condensate pan and cleaned drain line.",
+      "comment_date": "2024-09-11T18:30:00.000Z"
+    },
+    {
+      "comment_id": 12,
+      "complaint_id": 8,
+      "user_id": 1,
+      "comment_text": "Submitted request to academic section with schedule clash proof.",
+      "comment_date": "2024-09-12T18:30:00.000Z"
+    },
+    {
+      "comment_id": 13,
+      "complaint_id": 9,
+      "user_id": 2,
+      "comment_text": "Vendor technician re-calibrated barcode scanner and updated UPI terminal firmware.",
+      "comment_date": "2024-09-13T18:30:00.000Z"
+    },
+    {
+      "comment_id": 14,
+      "complaint_id": 11,
+      "user_id": 7,
+      "comment_text": "Lab staff demonstrated channel 1 drift to senior technician.",
+      "comment_date": "2024-09-15T18:30:00.000Z"
+    },
+    {
+      "comment_id": 15,
+      "complaint_id": 11,
+      "user_id": 5,
+      "comment_text": "Replaced deflection amplifier IC on oscilloscope station 6.",
+      "comment_date": "2024-09-16T18:30:00.000Z"
+    },
+    {
+      "comment_id": 16,
+      "complaint_id": 12,
+      "user_id": 8,
+      "comment_text": "MAC address whitelist updated on departmental subnet router.",
+      "comment_date": "2024-09-17T18:30:00.000Z"
+    },
+    {
+      "comment_id": 17,
+      "complaint_id": 13,
+      "user_id": 9,
+      "comment_text": "Course coordinator scheduled 2 extra makeup lecture slots for Saturday.",
+      "comment_date": "2024-09-18T18:30:00.000Z"
+    },
+    {
+      "comment_id": 18,
+      "complaint_id": 14,
+      "user_id": 10,
+      "comment_text": "Plumbing team dispatched to clear main washroom drainage line.",
+      "comment_date": "2024-09-19T18:30:00.000Z"
+    },
+    {
+      "comment_id": 19,
+      "complaint_id": 14,
+      "user_id": 6,
+      "comment_text": "Drain cleared and sanitisation completed by hostel housekeeping.",
+      "comment_date": "2024-09-20T18:30:00.000Z"
+    },
+    {
+      "comment_id": 20,
+      "complaint_id": 15,
+      "user_id": 11,
+      "comment_text": "Transport supervisor instructed driver to adhere strictly to departure board.",
+      "comment_date": "2024-09-21T18:30:00.000Z"
+    },
+    {
+      "comment_id": 21,
+      "complaint_id": 16,
+      "user_id": 12,
+      "comment_text": "Central library IP range re-registered with IEEE portal publisher.",
+      "comment_date": "2024-09-22T18:30:00.000Z"
+    },
+    {
+      "comment_id": 22,
+      "complaint_id": 17,
+      "user_id": 30,
+      "comment_text": "Power rails on ARM kits tested; ripple voltage exceeds specification.",
+      "comment_date": "2024-09-23T18:30:00.000Z"
+    },
+    {
+      "comment_id": 23,
+      "complaint_id": 18,
+      "user_id": 7,
+      "comment_text": "Canteen manager issued warning to staff regarding hygiene standards.",
+      "comment_date": "2024-09-24T18:30:00.000Z"
+    },
+    {
+      "comment_id": 24,
+      "complaint_id": 19,
+      "user_id": 8,
+      "comment_text": "Verification completed with course instructor; marks corrected in ERP database.",
+      "comment_date": "2024-09-25T18:30:00.000Z"
+    },
+    {
+      "comment_id": 25,
+      "complaint_id": 21,
+      "user_id": 13,
+      "comment_text": "Electrical maintenance team examined motor startup current surges.",
+      "comment_date": "2024-09-26T18:30:00.000Z"
+    },
+    {
+      "comment_id": 26,
+      "complaint_id": 21,
+      "user_id": 8,
+      "comment_text": "Upgraded circuit breaker rating to 32A C-curve as per lab motor load specs.",
+      "comment_date": "2024-09-27T18:30:00.000Z"
+    },
+    {
+      "comment_id": 27,
+      "complaint_id": 22,
+      "user_id": 14,
+      "comment_text": "New vendor license file received and installed on lab server.",
+      "comment_date": "2024-09-28T18:30:00.000Z"
+    },
+    {
+      "comment_id": 28,
+      "complaint_id": 23,
+      "user_id": 15,
+      "comment_text": "Defective heating element replaced in Block B water geyser.",
+      "comment_date": "2024-09-29T18:30:00.000Z"
+    },
+    {
+      "comment_id": 29,
+      "complaint_id": 24,
+      "user_id": 16,
+      "comment_text": "Sound engineer rewired collar microphone receiver antenna.",
+      "comment_date": "2024-09-30T18:30:00.000Z"
+    },
+    {
+      "comment_id": 30,
+      "complaint_id": 25,
+      "user_id": 17,
+      "comment_text": "Transport officer deployed additional 40-seater mini-bus on Route 12.",
+      "comment_date": "2024-10-01T18:30:00.000Z"
+    },
+    {
+      "comment_id": 31,
+      "complaint_id": 26,
+      "user_id": 18,
+      "comment_text": "Damaged modular wall socket isolated and replaced with ceramic base unit.",
+      "comment_date": "2024-10-02T18:30:00.000Z"
+    },
+    {
+      "comment_id": 32,
+      "complaint_id": 27,
+      "user_id": 13,
+      "comment_text": "Plumbing unit replaced sediment and carbon filters in RO plant.",
+      "comment_date": "2024-10-03T18:30:00.000Z"
+    },
+    {
+      "comment_id": 33,
+      "complaint_id": 31,
+      "user_id": 19,
+      "comment_text": "Pressure gauge re-calibrated using dead-weight tester apparatus.",
+      "comment_date": "2024-10-05T18:30:00.000Z"
+    },
+    {
+      "comment_id": 34,
+      "complaint_id": 32,
+      "user_id": 20,
+      "comment_text": "Workstation graphics driver rolled back to certified stable release.",
+      "comment_date": "2024-10-06T18:30:00.000Z"
+    },
+    {
+      "comment_id": 35,
+      "complaint_id": 33,
+      "user_id": 21,
+      "comment_text": "Hostel maintenance electrician replaced worn ball bearings in ceiling fan.",
+      "comment_date": "2024-10-07T18:30:00.000Z"
+    },
+    {
+      "comment_id": 36,
+      "complaint_id": 34,
+      "user_id": 22,
+      "comment_text": "Faculty conducted dedicated three-hour tutorial session on Rankine cycles.",
+      "comment_date": "2024-10-08T18:30:00.000Z"
+    },
+    {
+      "comment_id": 37,
+      "complaint_id": 36,
+      "user_id": 24,
+      "comment_text": "Mechanical workshop technician replaced coolant motor impeller.",
+      "comment_date": "2024-10-10T18:30:00.000Z"
+    },
+    {
+      "comment_id": 38,
+      "complaint_id": 41,
+      "user_id": 25,
+      "comment_text": "New rechargeable Ni-MH battery pack issued for total station instrument.",
+      "comment_date": "2024-10-12T18:30:00.000Z"
+    },
+    {
+      "comment_id": 39,
+      "complaint_id": 43,
+      "user_id": 27,
+      "comment_text": "Hostel carpenter fixed aluminium window frame and fitted new heavy-duty latch.",
+      "comment_date": "2024-10-14T18:30:00.000Z"
+    },
+    {
+      "comment_id": 40,
+      "complaint_id": 46,
+      "user_id": 26,
+      "comment_text": "Universal testing machine load cell re-zeroed and re-calibrated by service team.",
+      "comment_date": "2024-10-16T18:30:00.000Z"
+    },
+    {
+      "comment_id": 41,
+      "complaint_id": 52,
+      "user_id": 3,
+      "comment_text": "Audit test: MAX+1 comment insert verification.",
+      "comment_date": "2026-09-30T07:38:09.000Z"
+    }
+  ],
+  "notification": [
+    {
+      "notification_id": 1,
+      "user_id": 1,
+      "complaint_id": 1,
+      "message": "Your complaint #1 regarding CSE Lab 3 network has been submitted.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 2,
+      "user_id": 1,
+      "complaint_id": 1,
+      "message": "Staff Amitabh Verma has been assigned to investigate complaint #1.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 3,
+      "user_id": 1,
+      "complaint_id": 1,
+      "message": "Complaint #1 status updated to Resolved.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 4,
+      "user_id": 2,
+      "complaint_id": 2,
+      "message": "Your complaint #2 regarding elective portal has been registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 5,
+      "user_id": 2,
+      "complaint_id": 2,
+      "message": "Academic coordinator Dr. Rajesh Sharma has been assigned to complaint #2.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 6,
+      "user_id": 3,
+      "complaint_id": 3,
+      "message": "Your complaint #3 regarding LH-101 projector has been logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 7,
+      "user_id": 3,
+      "complaint_id": 3,
+      "message": "Complaint #3 status changed to In Progress.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 8,
+      "user_id": 4,
+      "complaint_id": 4,
+      "message": "Your complaint #4 regarding Turing Block Wi-Fi was submitted.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 9,
+      "user_id": 4,
+      "complaint_id": 4,
+      "message": "Complaint #4 status updated to Resolved by network admin.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 10,
+      "user_id": 5,
+      "complaint_id": 5,
+      "message": "Your complaint #5 regarding Hostel 1 water cooler has been registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 11,
+      "user_id": 5,
+      "complaint_id": 5,
+      "message": "Complaint #5 status changed to In Progress by hostel office.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 12,
+      "user_id": 6,
+      "complaint_id": 6,
+      "message": "Your complaint #6 regarding DBMS textbooks has been registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 13,
+      "user_id": 6,
+      "complaint_id": 6,
+      "message": "Complaint #6 has been closed after library procurement.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 14,
+      "user_id": 29,
+      "complaint_id": 7,
+      "message": "Your facility complaint #7 regarding Advanced Lab AC has been logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 15,
+      "user_id": 29,
+      "complaint_id": 7,
+      "message": "Complaint #7 assigned to Priya Nair for technical review.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 16,
+      "user_id": 1,
+      "complaint_id": 8,
+      "message": "Your complaint #8 regarding exam timetable clash has been lodged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 17,
+      "user_id": 1,
+      "complaint_id": 8,
+      "message": "Academic branch has updated complaint #8 to In Progress.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 18,
+      "user_id": 2,
+      "complaint_id": 9,
+      "message": "Your complaint #9 regarding canteen payment terminal was submitted.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 19,
+      "user_id": 2,
+      "complaint_id": 9,
+      "message": "Complaint #9 marked Resolved following terminal recalibration.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 20,
+      "user_id": 3,
+      "complaint_id": 10,
+      "message": "Your complaint #10 regarding GitLab server latency has been received.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 21,
+      "user_id": 7,
+      "complaint_id": 11,
+      "message": "Your complaint #11 regarding ECE Lab CRO has been registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 22,
+      "user_id": 7,
+      "complaint_id": 11,
+      "message": "Complaint #11 status updated to Resolved after component replacement.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 23,
+      "user_id": 8,
+      "complaint_id": 12,
+      "message": "Your complaint #12 regarding DSP lab network has been lodged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 24,
+      "user_id": 8,
+      "complaint_id": 12,
+      "message": "Complaint #12 status changed to In Progress.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 25,
+      "user_id": 9,
+      "complaint_id": 13,
+      "message": "Your complaint #13 regarding VLSI syllabus coverage has been registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 26,
+      "user_id": 9,
+      "complaint_id": 13,
+      "message": "Complaint #13 closed after extra makeup sessions scheduled.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 27,
+      "user_id": 10,
+      "complaint_id": 14,
+      "message": "Your complaint #14 regarding Hostel 2 washing machine was logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 28,
+      "user_id": 10,
+      "complaint_id": 14,
+      "message": "Complaint #14 status marked as Resolved.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 29,
+      "user_id": 11,
+      "complaint_id": 15,
+      "message": "Your complaint #15 regarding Route 5 bus schedule was submitted.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 30,
+      "user_id": 11,
+      "complaint_id": 15,
+      "message": "Complaint #15 assigned to transport coordinator Kavita Rao.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 31,
+      "user_id": 12,
+      "complaint_id": 16,
+      "message": "Your complaint #16 regarding IEEE Xplore access has been registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 32,
+      "user_id": 12,
+      "complaint_id": 16,
+      "message": "Complaint #16 closed following proxy IP renewal.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 33,
+      "user_id": 30,
+      "complaint_id": 17,
+      "message": "Your complaint #17 regarding ARM kits was logged successfully.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 34,
+      "user_id": 30,
+      "complaint_id": 17,
+      "message": "Complaint #17 status updated to In Progress by lab engineer.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 35,
+      "user_id": 7,
+      "complaint_id": 18,
+      "message": "Your complaint #18 regarding mess hygiene was registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 36,
+      "user_id": 7,
+      "complaint_id": 18,
+      "message": "Complaint #18 marked Resolved following mess committee audit.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 37,
+      "user_id": 8,
+      "complaint_id": 19,
+      "message": "Your complaint #19 regarding Signals marks discrepancy has been lodged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 38,
+      "user_id": 8,
+      "complaint_id": 19,
+      "message": "Complaint #19 assigned to course instructor for mark recheck.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 39,
+      "user_id": 9,
+      "complaint_id": 20,
+      "message": "Your complaint #20 regarding eduroam Wi-Fi loop has been logged.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 40,
+      "user_id": 13,
+      "complaint_id": 21,
+      "message": "Your complaint #21 regarding electrical machine breaker was lodged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 41,
+      "user_id": 13,
+      "complaint_id": 21,
+      "message": "Complaint #21 marked Resolved after MCB upgrade.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 42,
+      "user_id": 14,
+      "complaint_id": 22,
+      "message": "Your complaint #22 regarding SCADA simulation software was registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 43,
+      "user_id": 14,
+      "complaint_id": 22,
+      "message": "Complaint #22 status changed to In Progress.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 44,
+      "user_id": 15,
+      "complaint_id": 23,
+      "message": "Your complaint #23 regarding Hostel 3 geyser tripping has been logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 45,
+      "user_id": 15,
+      "complaint_id": 23,
+      "message": "Complaint #23 closed after element replacement.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 46,
+      "user_id": 16,
+      "complaint_id": 24,
+      "message": "Your complaint #24 regarding audio system distortion has been submitted.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 47,
+      "user_id": 16,
+      "complaint_id": 24,
+      "message": "Complaint #24 assigned to EEE department lab officer.",
+      "read_status": "Unread"
+    },
+    {
+      "notification_id": 48,
+      "user_id": 17,
+      "complaint_id": 25,
+      "message": "Your complaint #25 regarding Route 12 bus overcrowding was logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 49,
+      "user_id": 17,
+      "complaint_id": 25,
+      "message": "Complaint #25 closed after extra bus deployment.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 50,
+      "user_id": 18,
+      "complaint_id": 26,
+      "message": "Your complaint #26 regarding switchboard burn marks was logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 51,
+      "user_id": 19,
+      "complaint_id": 31,
+      "message": "Your complaint #31 regarding hydraulic press calibration was lodged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 52,
+      "user_id": 19,
+      "complaint_id": 31,
+      "message": "Complaint #31 resolved following dead-weight calibration.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 53,
+      "user_id": 20,
+      "complaint_id": 32,
+      "message": "Your complaint #32 regarding SolidWorks crashes was registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 54,
+      "user_id": 21,
+      "complaint_id": 33,
+      "message": "Your complaint #33 regarding ceiling fan noise was logged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 55,
+      "user_id": 21,
+      "complaint_id": 33,
+      "message": "Complaint #33 status marked Resolved.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 56,
+      "user_id": 22,
+      "complaint_id": 34,
+      "message": "Your complaint #34 regarding tutorial sessions was registered.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 57,
+      "user_id": 22,
+      "complaint_id": 34,
+      "message": "Complaint #34 closed after weekend tutorial completed.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 58,
+      "user_id": 25,
+      "complaint_id": 41,
+      "message": "Your complaint #41 regarding total station battery was lodged.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 59,
+      "user_id": 25,
+      "complaint_id": 41,
+      "message": "Complaint #41 marked Resolved after battery issue.",
+      "read_status": "Read"
+    },
+    {
+      "notification_id": 60,
+      "user_id": 26,
+      "complaint_id": 42,
+      "message": "Your complaint #42 regarding Civil 3D license timeout was registered.",
+      "read_status": "Unread"
+    }
+  ]
+}

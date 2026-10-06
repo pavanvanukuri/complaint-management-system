@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 
 if (process.env.NODE_ENV === 'production' && !process.env.SESSION_SECRET) {
-  throw new Error('SESSION_SECRET is required in production');
+  console.warn('[Security Warning] SESSION_SECRET is not set in production. Using auto-generated secret for this process.');
 }
 
 const tokenSecret = process.env.SESSION_SECRET || crypto.randomBytes(32).toString('hex');

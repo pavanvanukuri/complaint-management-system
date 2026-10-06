@@ -15,16 +15,18 @@ The application allows:
 
 ## Technology Stack
 
-- Frontend: HTML, CSS, JavaScript
+- Frontend: HTML5, CSS3, Vanilla JavaScript
 - Backend: Node.js, Express.js
-- Database: Oracle 26ai via `oracledb`
+- Database: PostgreSQL (Render Cloud DB), SQLite (Embedded Fallback), and Oracle 26ai (Local Development)
 
 ## Folder Structure
 
-- `backend/` — database connection and API routes
+- `backend/` — database connection, schema initialization, seed data, and API routes
+- `backend/initDb.js` — automatic database schema creation and seeding
+- `backend/seedData.json` — complete seed dataset (departments, users, staff, complaints, comments, notifications)
 - `frontend/` — UI pages and static assets
-- `.env` — Oracle database configuration
-- `.gitignore` — ignores environment file and dependencies
+- `render.yaml` — Render Blueprint configuration for 1-click cloud deployment with PostgreSQL
+- `.env.example` — environment configuration examples
 - `package.json` — Node project configuration
 
 ## Prerequisites
@@ -133,18 +135,46 @@ The backend creates an Oracle connection pool using `oracledb.createPool()` defi
 
 The app is designed to work against the real Oracle tables already present in the database. If Oracle returns `ORA-28000`, the account `CMSUSER` is locked. Unlock the Oracle user first, then restart the app and retry the login.
 
-## Render Deployment
+## Render Cloud Deployment
 
-Deploy the [GitHub repository](https://github.com/pavanvanukuri/complaint-management-system) as a Render Web Service using the root `render.yaml` Blueprint.
+You can deploy this project to [Render](https://render.com) so anyone with the link can immediately access and use it.
 
-- Build command: `npm install`
-- Start command: `npm start`
-- Health check: `/api/health` (checks Oracle connectivity)
-- Set `DB_USER`, `DB_PASSWORD`, `DB_CONNECT_STRING`, and `SESSION_SECRET` in Render's Environment settings.
-- The Oracle database must be reachable from Render. Do not use `localhost` or the local `FREEPDB1` connection string; enter the real cloud Oracle connection string and credentials in Render only.
+### Method 1: 1-Click Blueprint Deploy (Recommended - with PostgreSQL)
 
-## Deployment Gate
+1. Push your repository to GitHub: `https://github.com/pavanvanukuri/complaint-management-system`.
+2. Go to the [Render Dashboard](https://dashboard.render.com).
+3. Click **New +** and select **Blueprint**.
+4. Connect your GitHub repository.
+5. Render will automatically detect `render.yaml` and configure:
+   - **cms-postgres** — Free managed PostgreSQL database.
+   - **complaint-management-system** — Free Web Service running Node.js.
+   - `DATABASE_URL` linked directly between the database and the web service.
+   - `SESSION_SECRET` generated automatically.
+6. Click **Apply**.
+7. Render will build and deploy the app. On first startup, the database tables and all seed data (departments, categories, users, complaints, comments, notifications) are populated automatically!
+8. When the deployment finishes, Render gives you a public link (e.g. `https://complaint-management-system-xxxx.onrender.com`).
 
-Login currently looks up users by registration number only because the existing `USERS` table has no password field. This is suitable only for a controlled classroom demonstration; a registration number is not an authentication secret. Before public deployment, integrate a trusted university identity provider or another approved authentication mechanism without changing the Oracle schema. Also configure the backend with a network-reachable Oracle service: `localhost` in the developer's `.env` refers to that developer's machine and is not reachable from a cloud host.
+### Method 2: Manual Web Service Deploy (Zero Setup - Embedded Database)
 
-The current Oracle data also has no email match between `USERS` faculty and `STAFF` rows. Faculty complaint access is therefore scoped to the faculty member's department; a per-faculty assigned queue cannot be reliably identified from the existing columns and is not represented as a personal queue in the UI.
+If you don't want to create a separate managed database service on Render:
+
+1. Click **New +** and select **Web Service**.
+2. Connect your GitHub repository.
+3. Configure the settings:
+   - **Environment:** Node
+   - **Build Command:** `npm install`
+   - **Start Command:** `npm start`
+   - **Health Check Path:** `/api/health`
+4. Click **Deploy Web Service**.
+5. The application will automatically initialize its embedded SQLite database pre-loaded with all sample users and complaints!
+
+### Live Testing on the Deployed Link
+
+Anyone visiting your deployed link can test the platform immediately:
+- The login page includes **Quick Demo Login** buttons for instant access.
+- Or log in manually using sample registration numbers:
+  - **Student (CSE):** `REG2024CSE003` (Karan Mehta)
+  - **Student (ECE):** `REG2024ECE001` (Rohan Kapur)
+  - **Faculty (CSE):** `FAC2021CSE01` (Dr. Tarun Mathur)
+  - **Faculty (ECE):** `FAC2020ECE02` (Dr. Shalini Misra)
+- Test complaint submission, staff assignment, status updates, commenting, and real-time notifications.

@@ -390,3 +390,63 @@ th {
     display: grid;
   }
 }
+
+.demo-accounts {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.demo-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.demo-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.demo-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease-in-out;
+}
+
+.demo-chip:hover {
+  background: #eff6ff;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-student {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-faculty {
+  background: #fef3c7;
+  color: #b45309;
+}

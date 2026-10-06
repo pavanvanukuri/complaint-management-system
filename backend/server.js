@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
-const { initPool, getPool, isOracleLockedError } = require('./db');
+const { initPool, getPool, isOracleLockedError, execute, getDialect } = require('./db');
 
 dotenv.config();
 
@@ -33,51 +33,43 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/health', async (req, res) => {
-  let connection;
+  const dialect = getDialect();
 
   try {
-    const pool = await getPool();
-    connection = await pool.getConnection();
-    const result = await connection.execute('SELECT 1 AS RESULT FROM DUAL');
+    const result = await execute('SELECT 1 AS RESULT FROM DUAL');
 
     if (!result.rows || !result.rows.length) {
       return res.status(500).json({
         status: 'error',
-        oracle: 'not_connected',
-        message: 'Oracle query returned no data.',
+        database: dialect,
+        connected: false,
+        message: 'Database query returned no data.',
       });
     }
 
     return res.status(200).json({
       status: 'ok',
-      oracle: 'connected',
-      databaseUser: process.env.DB_USER ? 'configured' : null,
-      connectString: process.env.DB_CONNECT_STRING ? 'configured' : null,
+      database: dialect,
+      connected: true,
       result: result.rows[0][0],
     });
   } catch (error) {
     if (isOracleLockedError(error)) {
       return res.status(401).json({
         status: 'error',
+        database: 'oracle',
         oracle: 'locked',
         message: 'CMSUSER is locked in Oracle. Unlock the account and retry.',
       });
     }
 
-    console.error('Oracle health check failed:', error.message);
+    console.error('Database health check failed:', error.message);
     return res.status(500).json({
       status: 'error',
-      oracle: 'not_connected',
-      message: 'Unable to connect to Oracle',
+      database: dialect,
+      connected: false,
+      message: 'Unable to connect to database: ' + error.message,
     });
-  } finally {
-    if (connection) {
-      try {
-        await connection.close();
-      } catch (closeError) {
-        console.error('Database close failed:', closeError.message);
-      }
-    }
   }
 });
 
