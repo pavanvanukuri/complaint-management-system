@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPLAINT MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-card">
+      <div class="branding">
+        <h1>COMPLAINT MANAGEMENT SYSTEM</h1>
+        <p>Student and staff complaint portal</p>
+      </div>
+
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="registration_no">Registration Number</label>
+          <input
+            id="registration_no"
+            name="registration_no"
+            type="text"
+            placeholder="Enter registration number"
+            required
+          />
+        </div>
+
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+
+      <div id="loginMessage" class="message-box hidden"></div>
+    </div>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

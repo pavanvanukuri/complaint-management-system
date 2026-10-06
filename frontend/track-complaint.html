@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Complaint | Complaint Management System</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">CMS</div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/submit-complaint.html">Submit Complaint</a>
+          <a href="/my-complaints.html">My Complaints</a>
+          <a href="/track-complaint.html" class="active">Track Complaint</a>
+          <a href="/notifications.html">Notifications</a>
+          <button id="logoutBtn" class="link-btn">Logout</button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <h2>Track Complaint</h2>
+          <div id="userLabel" class="user-label"></div>
+        </header>
+
+        <section class="panel">
+          <div class="track-search">
+            <input id="trackComplaintId" type="number" placeholder="Enter complaint ID" />
+            <button id="trackComplaintButton" class="primary-btn">View</button>
+          </div>
+
+          <div id="trackComplaintDetails" class="track-details hidden"></div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-status">
+              <span class="timeline-step">Pending</span>
+              <span class="timeline-arrow">↓</span>
+              <span class="timeline-step">Assigned</span>
+              <span class="timeline-arrow">↓</span>
+              <span class="timeline-step">In Progress</span>
+              <span class="timeline-arrow">↓</span>
+              <span class="timeline-step">Resolved</span>
+              <span class="timeline-arrow">↓</span>
+              <span class="timeline-step">Closed</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="complaintComments" class="panel hidden">
+          <div class="section-heading">
+            <h3>Comments</h3>
+          </div>
+          <div id="commentList"></div>
+          <form id="commentForm" class="stack-form">
+            <div class="form-group">
+              <label for="commentText">Add a comment</label>
+              <textarea id="commentText" rows="3" maxlength="2000" required></textarea>
+            </div>
+            <button type="submit" class="primary-btn">Add Comment</button>
+          </form>
+          <div id="commentMessage" class="message-box hidden"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/user.js"></script>
+  </body>
+</html>

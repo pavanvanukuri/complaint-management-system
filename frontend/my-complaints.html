@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Complaints | Complaint Management System</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">CMS</div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/submit-complaint.html">Submit Complaint</a>
+          <a href="/my-complaints.html" class="active">My Complaints</a>
+          <a href="/track-complaint.html">Track Complaint</a>
+          <a href="/notifications.html">Notifications</a>
+          <button id="logoutBtn" class="link-btn">Logout</button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <h2>My Complaints</h2>
+          <div id="userLabel" class="user-label"></div>
+        </header>
+
+        <section class="panel">
+          <div class="filters">
+            <input id="myComplaintSearch" type="search" placeholder="Search by subject" />
+            <select id="myStatusFilter">
+              <option value="">All Status</option>
+            </select>
+            <select id="myPriorityFilter">
+              <option value="">All Priority</option>
+            </select>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Subject</th>
+                  <th>Category</th>
+                  <th>Department</th>
+                  <th>Staff</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="myComplaintTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/user.js"></script>
+  </body>
+</html>
